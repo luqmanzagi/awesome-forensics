@@ -34,7 +34,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ## Collections
 
 - [DFIR – The definitive compendium project](https://aboutdfir.com) - Collection of forensic resources for learning and research. Offers lists of certifications, books, blogs, challenges and more
-- [dfir.training](http://www.dfir.training) - Database of forensic resources focused on events, tools and more
+- [dfir.training](https://www.dfir.training/) - Database of forensic resources focused on events, tools and more
 - [ForensicArtifacts.com Artifact Repository](https://github.com/ForensicArtifacts/artifacts) - Machine-readable knowledge base of forensic artifacts
 
 ## Tools
@@ -46,6 +46,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [bitscout](https://github.com/vitaly-kamluk/bitscout) - LiveCD/LiveUSB for remote forensic acquisition and analysis
 - [deft](http://www.deftlinux.net) - Linux distribution for forensic analysis
+- [SANS Investigative Forensics Toolkit (sift)](https://github.com/sans-dfir/sift) - Linux distribution for forensic analysis
 
 ### Frameworks
 
@@ -67,7 +68,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [dc3dd](https://sourceforge.net/projects/dc3dd/) - Improved version of dd
 - [dcfldd](http://dcfldd.sourceforge.net) - Different improved version of dd (this version has some bugs!, another version is on github [adulau/dcfldd](https://github.com/adulau/dcfldd))
-- [FTK Imager](http://accessdata.com/product-download/ftk-imager-version-3.4.3) - Free imageing tool for windows
+- [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-3.4.3/) - Free imageing tool for windows
 - [Guymager](http://guymager.sourceforge.net) - Open source version for disk imageing on linux systems
 
 ### Carving
@@ -77,7 +78,8 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [bstrings](https://github.com/EricZimmerman/bstrings) - Improved strings utility
 - [bulk_extractor](https://github.com/simsong/bulk_extractor) - Extracts informations like email adresses, creditscard numbers and histrograms of disk images
 - [floss](https://github.com/fireeye/flare-floss) - Static analysis tool to automatically deobfuscate strings from malware binaries
-- [photorec](http://www.cgsecurity.org/wiki/PhotoRec) - File carving tool
+- [photorec](https://www.cgsecurity.org/wiki/PhotoRec) - File carving tool
+- [swap_digger](https://github.com/sevagas/swap_digger) - A bash script used to automate Linux swap analysis, automating swap extraction and searches for Linux user credentials, Web form credentials, Web form emails, etc.
 
 ### Memory Forensics
 
@@ -102,9 +104,11 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 *more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#windows-artifacts)*
 
+- [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
 - [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector) - Collect artifacts on windows
 - [FRED](https://www.pinguin.lu/fred) - Cross-platform microsoft registry hive editor
-- [MFT-Parsers](http://az4n6.blogspot.de/2015/09/whos-your-master-mft-parsers-reviewed.html) - Comparison of MFT-Parsers
+- [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
+- [MFT-Parsers](http://az4n6.blogspot.com/2015/09/whos-your-master-mft-parsers-reviewed.html) - Comparison of MFT-Parsers
 - [MFTExtractor](https://github.com/aarsakian/MFTExtractor) - MFT-Parser
 - [NTFS journal parser](http://strozfriedberg.github.io/ntfs-linker/)
 - [NTFS USN Journal parser](https://github.com/PoorBillionaire/USN-Journal-Parser)
@@ -114,6 +118,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### OS X Forensics
 
 - [OSXAuditor](https://github.com/jipegit/OSXAuditor)
+- [OSX Collect](https://github.com/Yelp/osxcollector)
 
 ### Internet Artifacts
 
@@ -129,6 +134,8 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Disk image handling
 
 - [aff4](https://github.com/google/aff4) - AFF4 is an alternative, fast file format
+- [Disk Arbitrator](https://github.com/aburgh/Disk-Arbitrator) - A Mac OS X forensic utility designed to help the user ensure correct forensic procedures are followed during imaging of a disk device
+- [docker-explorer](https://github.com/google/docker-explorer/) - A tool to help forensicate offline docker acquisitions
 - [imagemounter](https://github.com/ralphje/imagemounter) - Command line utility and Python package to ease the (un)mounting of forensic disk images
 - [libewf](https://github.com/libyal/libewf) - Libewf is a library and some tools to access the Expert Witness Compression Format (EWF, E01)
 - [xmount](https://www.pinguin.lu/xmount) - Convert between different disk image formats
@@ -147,7 +154,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Forensics CTFs](https://github.com/apsdehal/awesome-ctf/blob/master/README.md#forensics)
 - [Precision Widgets of North Dakota Intrusion
-](https://betweentwodfirns.blogspot.de/2017/11/dfir-ctf-precision-widgets-of-north.html)
+](https://betweentwodfirns.blogspot.com/2017/11/dfir-ctf-precision-widgets-of-north.html)
 
 ## Resources
 
@@ -157,7 +164,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Network Forensics: Tracking Hackers through Cyberspace](https://www.pearson.com/us/higher-education/program/Davidoff-Network-Forensics-Tracking-Hackers-through-Cyberspace/PGM322390.html) - Learn to recognize hackers’ tracks and uncover network-based evidence
 - [The Art of Memory Forensics](https://www.memoryanalysis.net/amf) - Detecting Malware and Threats in Windows, Linux, and Mac Memory
-- [The Practice of Network Security Monitoring](https://www.nostarch.com/nsm) - Understanding Incident Detection and Response
+- [The Practice of Network Security Monitoring](https://nostarch.com/nsm) - Understanding Incident Detection and Response
 
 ### File System Corpora
 
@@ -209,6 +216,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [Malware Analysis](https://github.com/rshipp/awesome-malware-analysis)
 - [Pentesting](https://github.com/enaqx/awesome-pentest)
 - [Security](https://github.com/sbilly/awesome-security)
+- [Social Engineering](https://github.com/v2-dev/awesome-social-engineering)
 - [YARA](https://github.com/InQuest/awesome-yara)
 
 ## [Contributing](CONTRIBUTING.md)
