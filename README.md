@@ -18,6 +18,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
   - [Timeline Analysis](#timeline-analysis)
   - [Disk image handling](#disk-image-handling)
   - [Decryption](#decryption)
+  - [Management](#management)
 - [Learn Forensics](#learn-forensics)
   - [CTFs](#ctfs)
 - [Resources](#resources)
@@ -51,6 +52,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Frameworks
 
 - [dff](https://github.com/arxsys/dff) - Forensic framework
+- [dexter](https://github.com/coinbase/dexter) - Dexter is a forensics acquisition framework designed to be extensible and secure
 - [IntelMQ](https://github.com/certtools/intelmq) - IntelMQ collects and processes security feeds
 - [Laika BOSS](https://github.com/lmco/laikaboss) - Laika is an object scanner and intrusion detection system
 - [PowerForensics](https://github.com/Invoke-IR/PowerForensics) - PowerForensics is a framework for live disk forensic analysis
@@ -69,7 +71,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [dc3dd](https://sourceforge.net/projects/dc3dd/) - Improved version of dd
 - [dcfldd](http://dcfldd.sourceforge.net) - Different improved version of dd (this version has some bugs!, another version is on github [adulau/dcfldd](https://github.com/adulau/dcfldd))
 - [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-3.4.3/) - Free imageing tool for windows
-- [Guymager](http://guymager.sourceforge.net) - Open source version for disk imageing on linux systems
+- [Guymager](https://guymager.sourceforge.io/) - Open source version for disk imageing on linux systems
 
 ### Carving
 
@@ -105,6 +107,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 *more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#windows-artifacts)*
 
 - [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
+- [Beagle](https://github.com/yampelo/beagle) -  Transform data sources and logs into graphs
 - [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector) - Collect artifacts on windows
 - [FRED](https://www.pinguin.lu/fred) - Cross-platform microsoft registry hive editor
 - [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
@@ -117,6 +120,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### OS X Forensics
 
+- [mac_apt (macOS Artifact Parsing Tool)](https://github.com/ydkhatri/mac_apt) - Extracts forensic artifacts from disk images or live machines
 - [OSXAuditor](https://github.com/jipegit/OSXAuditor)
 - [OSX Collect](https://github.com/Yelp/osxcollector)
 
@@ -129,6 +133,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [DFTimewolf](https://github.com/log2timeline/dftimewolf) - Framework for orchestrating forensic collection, processing and data export using GRR and Rekall
 - [plaso](https://github.com/log2timeline/plaso) - Extract timestamps from various files and aggregate them
+- [timeliner](https://github.com/airbus-cert/timeliner) - A rewrite of mactime, a bodyfile reader
 - [timesketch](https://github.com/google/timesketch) - Collaborative forensic timeline analysis
 
 ### Disk image handling
@@ -143,11 +148,15 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Decryption
 
 - [hashcat](https://hashcat.net/hashcat/) - Fast password cracker with GPU support
-- [John the Ripper](http://www.openwall.com/john/) - Password cracker
+- [John the Ripper](https://www.openwall.com/john/) - Password cracker
+
+### Management
+
+- [dfirtrack](https://github.com/stuhli/dfirtrack) - Digital Forensics and Incident Response Tracking application, track systems
 
 ## Learn forensics
 
-- [Forensic challanges](http://www.amanhardikar.com/mindmaps/ForensicChallenges.html) - Mindmap of forensic challanges
+- [Forensic challenges](http://www.amanhardikar.com/mindmaps/ForensicChallenges.html) - Mindmap of forensic challenges
 - [Training material](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational) - Online training material by European Union Agency for Network and Information Security for different topics (e.g. [Digital forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational/#digital_forensics), [Network forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational/#network_forensics))
 
 ### CTFs
@@ -168,7 +177,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### File System Corpora
 
-- [Digital Forensic Challenge Images](https://www.ashemery.com/dfir.html) - Two DFIR challanges with images
+- [Digital Forensic Challenge Images](https://www.ashemery.com/dfir.html) - Two DFIR challenges with images
 - [Digital Forensics Tool Testing Images](http://dftt.sourceforge.net)
 - [FAU Open Research Challenge Digital Forensics](https://openresearchchallenge.org/digitalForensics/appliedforensiccomputinggroup)
 - [The CFReDS Project](https://www.cfreds.nist.gov)
@@ -207,7 +216,6 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Android Security](https://github.com/ashishb/android-security-awesome)
 - [AppSec](https://github.com/paragonie/awesome-appsec)
-- [Binary](https://github.com/cugu/awesome-binary)
 - [CTFs](https://github.com/apsdehal/awesome-ctf)
 - [Hacking](https://github.com/carpedm20/awesome-hacking)
 - [Honeypots](https://github.com/paralax/awesome-honeypots)
