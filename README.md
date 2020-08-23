@@ -1,4 +1,4 @@
-# Awesome Forensics [![Link Status](https://api.travis-ci.org/cugu/awesome-forensics.svg?branch=master)](https://travis-ci.org/cugu/awesome-forensics)
+# Awesome Forensics [![Link Status](https://github.com/cugu/awesome-forensics/workflows/CI/badge.svg)](https://github.com/cugu/awesome-forensics)
 
 Curated list of awesome **free** (mostly open source) forensic analysis tools and resources.
 
@@ -8,17 +8,22 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
   - [Distributions](#distributions)
   - [Frameworks](#frameworks)
   - [Live forensics](#live-forensics)
+  - [Acquisition](#acquisition)
   - [Imageing](#imageing)
   - [Carving](#carving)
   - [Memory Forensics](#memory-forensics)
   - [Network Forensics](#network-forensics)
   - [Windows Artifacts](#windows-artifacts)
+    - [NTFS/MFT Processing](#ntfsmft-processing)
   - [OS X Forensics](#os-x-forensics)
+  - [Mobile Forensics](#mobile-forensics)
+  - [Docker Forensics](#docker-forensics)
   - [Internet Artifacts](#internet-artifacts)
   - [Timeline Analysis](#timeline-analysis)
   - [Disk image handling](#disk-image-handling)
   - [Decryption](#decryption)
   - [Management](#management)
+  - [Picture Analysis](#picture-analysis)
 - [Learn Forensics](#learn-forensics)
   - [CTFs](#ctfs)
 - [Resources](#resources)
@@ -36,81 +41,84 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [DFIR – The definitive compendium project](https://aboutdfir.com) - Collection of forensic resources for learning and research. Offers lists of certifications, books, blogs, challenges and more
 - [dfir.training](https://www.dfir.training/) - Database of forensic resources focused on events, tools and more
-- [ForensicArtifacts.com Artifact Repository](https://github.com/ForensicArtifacts/artifacts) - Machine-readable knowledge base of forensic artifacts
+- :star: [ForensicArtifacts.com Artifact Repository](https://github.com/ForensicArtifacts/artifacts) - Machine-readable knowledge base of forensic artifacts
 
 ## Tools
 
 - [Forensics tools on Wikipedia](https://en.wikipedia.org/wiki/List_of_digital_forensics_tools)
-- [Free computer forensic tools](https://forensiccontrol.com/resources/free-software/) - Comprehensive list of free computer forensic tools
 
 ### Distributions
 
 - [bitscout](https://github.com/vitaly-kamluk/bitscout) - LiveCD/LiveUSB for remote forensic acquisition and analysis
-- [deft](http://www.deftlinux.net) - Linux distribution for forensic analysis
-- [SANS Investigative Forensics Toolkit (sift)](https://github.com/sans-dfir/sift) - Linux distribution for forensic analysis
+- [SANS Investigative Forensics Toolkit (sift)](https://github.com/teamdfir/sift) - Linux distribution for forensic analysis
+- [Tsurugi Linux](https://tsurugi-linux.org/) - Linux distribution for forensic analysis
 
 ### Frameworks
 
 - [dff](https://github.com/arxsys/dff) - Forensic framework
 - [dexter](https://github.com/coinbase/dexter) - Dexter is a forensics acquisition framework designed to be extensible and secure
 - [IntelMQ](https://github.com/certtools/intelmq) - IntelMQ collects and processes security feeds
+- [Kuiper](https://github.com/DFIRKuiper/Kuiper) - Digital Investigation Platform
 - [Laika BOSS](https://github.com/lmco/laikaboss) - Laika is an object scanner and intrusion detection system
 - [PowerForensics](https://github.com/Invoke-IR/PowerForensics) - PowerForensics is a framework for live disk forensic analysis
-- [The Sleuth Kit](https://github.com/sleuthkit/sleuthkit) - Tools for low level forensic analysis
+- :star: [The Sleuth Kit](https://github.com/sleuthkit/sleuthkit) - Tools for low level forensic analysis
 - [turbinia](https://github.com/google/turbinia) - Turbinia is an open-source framework for deploying, managing, and running forensic workloads on cloud platforms
+- [IPED - Indexador e Processador de Evidências Digitais](https://github.com/sepinf-inc/IPED) - Brazilian Federal Police Tool for Forensic Investigations
 
 ### Live forensics
 
 - [grr](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response
 - [Linux Expl0rer](https://github.com/intezer/linux-explorer) - Easy-to-use live forensics toolbox for Linux endpoints written in Python & Flask
 - [mig](https://github.com/mozilla/mig) - Distributed & real time digital forensics at the speed of the cloud
-- [osquery](https://github.com/facebook/osquery) - SQL powered operating system analytics
+- [osquery](https://github.com/osquery/osquery) - SQL powered operating system analytics
+
+### Acquisition
+
+- [artifactcollector](https://github.com/forensicanalysis/artifactcollector) - A customizable agent to collect forensic artifacts on any Windows, macOS or Linux system
+- [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
+- [AVML](https://github.com/microsoft/avml) - A portable volatile memory acquisition tool for Linux
+- [Belkasoft Acquisition Tool](https://belkasoft.com/bat) - Belkasoft Acquisition Tool (or BelkaImager) allows you to make images of hard and removable drives, Android and iOS devices, and download Cloud data
+- [Belkasoft RAM Capturer](https://belkasoft.com/ram-capturer) - Volatile Memory Acquisition Tool
+- [DFIR ORC](https://dfir-orc.github.io/) - Forensics artefact collection tool for systems running Microsoft Windows
+- [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector) - Collect artifacts on windows
+- [LiME](https://github.com/504ensicsLabs/LiME) - Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, formerly called DMD
+- [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using Velocidex Query Language (VQL) queries
 
 ### Imageing
 
 - [dc3dd](https://sourceforge.net/projects/dc3dd/) - Improved version of dd
 - [dcfldd](http://dcfldd.sourceforge.net) - Different improved version of dd (this version has some bugs!, another version is on github [adulau/dcfldd](https://github.com/adulau/dcfldd))
-- [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-3.4.3/) - Free imageing tool for windows
+- [FTK Imager](https://accessdata.com/product-download/ftk-imager-version-3-4-3/) - Free imageing tool for windows
 - [Guymager](https://guymager.sourceforge.io/) - Open source version for disk imageing on linux systems
 
 ### Carving
 
-*more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#file-carving)*
-
 - [bstrings](https://github.com/EricZimmerman/bstrings) - Improved strings utility
 - [bulk_extractor](https://github.com/simsong/bulk_extractor) - Extracts informations like email adresses, creditscard numbers and histrograms of disk images
 - [floss](https://github.com/fireeye/flare-floss) - Static analysis tool to automatically deobfuscate strings from malware binaries
-- [photorec](https://www.cgsecurity.org/wiki/PhotoRec) - File carving tool
+- :star: [photorec](https://www.cgsecurity.org/wiki/PhotoRec) - File carving tool
 - [swap_digger](https://github.com/sevagas/swap_digger) - A bash script used to automate Linux swap analysis, automating swap extraction and searches for Linux user credentials, Web form credentials, Web form emails, etc.
 
 ### Memory Forensics
 
-*more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#memory-forensics)*
-
 - [inVtero.net](https://github.com/ShaneK2/inVtero.net) - High speed memory analysis framework
-  developed in .NET supports all Windows x64, includes code integrity and write support.
+  developed in .NET supports all Windows x64, includes code integrity and write support
 - [KeeFarce](https://github.com/denandz/KeeFarce) - Extract KeePass passwords from memory
+- [MemProcFS](https://github.com/ufrisk/MemProcFS) - An easy and convenient way of accessing physical memory as files a virtual file system.
 - [Rekall](https://github.com/google/rekall) - Memory Forensic Framework
 - [volatility](https://github.com/volatilityfoundation/volatility) - The memory forensic framework
 - [VolUtility](https://github.com/kevthehermit/VolUtility) - Web App for Volatility framework
 
-### Network Forensics
-
-*more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#network), [Forensicswiki's Tool List](http://forensicswiki.org/wiki/Tools:Network_Forensics), [awesome-pcaptools](https://github.com/caesar0301/awesome-pcaptools) and [Wireshark Tool and Script List](https://wiki.wireshark.org/Tools)*
-
-- [SiLK Tools](https://tools.netsa.cert.org/silk/) - SiLK is a suite of network traffic collection and analysis tools
-- [Wireshark](https://www.wireshark.org) - The network traffic analysis tool
-- [NetLytics](https://github.com/marty90/netlytics/) - Analytics platform to process network data on Spark.
-
 ### Windows Artifacts
 
-*more at [Malware Analysis List](https://github.com/rshipp/awesome-malware-analysis#windows-artifacts)*
-
-- [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
 - [Beagle](https://github.com/yampelo/beagle) -  Transform data sources and logs into graphs
-- [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector) - Collect artifacts on windows
 - [FRED](https://www.pinguin.lu/fred) - Cross-platform microsoft registry hive editor
 - [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
+- [python-evt](https://github.com/williballenthin/python-evt) - Pure Python parser for classic Windows Event Log files (.evt)
+- [RegRipper3.0](https://github.com/keydet89/RegRipper3.0) - RegRipper is an open source Perl tool for parsing the Registry and presenting it for analysis.
+
+#### NTFS/MFT Processing
+
 - [MFT-Parsers](http://az4n6.blogspot.com/2015/09/whos-your-master-mft-parsers-reviewed.html) - Comparison of MFT-Parsers
 - [MFTExtractor](https://github.com/aarsakian/MFTExtractor) - MFT-Parser
 - [NTFS journal parser](http://strozfriedberg.github.io/ntfs-linker/)
@@ -124,25 +132,35 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [OSXAuditor](https://github.com/jipegit/OSXAuditor)
 - [OSX Collect](https://github.com/Yelp/osxcollector)
 
+### Mobile Forensics
+
+- [ALEAPP](https://github.com/abrignoni/ALEAPP) - An Android Logs Events and Protobuf Parser
+- [MEAT](https://github.com/jfarley248/MEAT) - Perform different kinds of acquisitions on iOS devices
+
+### Docker Forensics
+
+- [dof (Docker Forensics Toolkit)](https://github.com/docker-forensics-toolkit/toolkit) - Extracts and interprets forensic artifacts from disk images of Docker Host systems
+- [Docker Explorer](https://github.com/google/docker-explorer) Extracts and interprets forensic artifacts from disk images of Docker Host systems
+
 ### Internet Artifacts
 
 - [chrome-url-dumper](https://github.com/eLoopWoo/chrome-url-dumper) - Dump all local stored infromation collected by Chrome
 - [hindsight](https://github.com/obsidianforensics/hindsight) - Internet history forensics for Google Chrome/Chromium
+- [unfurl](https://github.com/obsidianforensics/unfurl) - Extract and visualize data from URLs
 
 ### Timeline Analysis
 
 - [DFTimewolf](https://github.com/log2timeline/dftimewolf) - Framework for orchestrating forensic collection, processing and data export using GRR and Rekall
-- [plaso](https://github.com/log2timeline/plaso) - Extract timestamps from various files and aggregate them
+- :star: [plaso](https://github.com/log2timeline/plaso) - Extract timestamps from various files and aggregate them
 - [timeliner](https://github.com/airbus-cert/timeliner) - A rewrite of mactime, a bodyfile reader
 - [timesketch](https://github.com/google/timesketch) - Collaborative forensic timeline analysis
 
 ### Disk image handling
 
-- [aff4](https://github.com/google/aff4) - AFF4 is an alternative, fast file format
 - [Disk Arbitrator](https://github.com/aburgh/Disk-Arbitrator) - A Mac OS X forensic utility designed to help the user ensure correct forensic procedures are followed during imaging of a disk device
-- [docker-explorer](https://github.com/google/docker-explorer/) - A tool to help forensicate offline docker acquisitions
 - [imagemounter](https://github.com/ralphje/imagemounter) - Command line utility and Python package to ease the (un)mounting of forensic disk images
 - [libewf](https://github.com/libyal/libewf) - Libewf is a library and some tools to access the Expert Witness Compression Format (EWF, E01)
+- [PancakeViewer](https://github.com/forensicmatt/PancakeViewer) - Disk image viewer based in dfvfs, similar to the FTK Imager viewer.
 - [xmount](https://www.pinguin.lu/xmount) - Convert between different disk image formats
 
 ### Decryption
@@ -153,17 +171,21 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Management
 
 - [dfirtrack](https://github.com/stuhli/dfirtrack) - Digital Forensics and Incident Response Tracking application, track systems
+- [Incidents](https://github.com/veeral-patel/incidents) - Web application for organizing non-trivial security investigations. Built on the idea that incidents are trees of tickets, where some tickets are leads
+
+### Picture Analysis
+
+- [sherloq](https://github.com/GuidoBartoli/sherloq) - An open-source digital photographic image forensic toolset
 
 ## Learn forensics
 
-- [Forensic challenges](http://www.amanhardikar.com/mindmaps/ForensicChallenges.html) - Mindmap of forensic challenges
+- [Forensic challenges](https://www.amanhardikar.com/mindmaps/ForensicChallenges.html) - Mindmap of forensic challenges
 - [Training material](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational) - Online training material by European Union Agency for Network and Information Security for different topics (e.g. [Digital forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational/#digital_forensics), [Network forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational/#network_forensics))
 
 ### CTFs
 
 - [Forensics CTFs](https://github.com/apsdehal/awesome-ctf/blob/master/README.md#forensics)
-- [Precision Widgets of North Dakota Intrusion
-](https://betweentwodfirns.blogspot.com/2017/11/dfir-ctf-precision-widgets-of-north.html)
+- [Precision Widgets of North Dakota Intrusion](https://betweentwodfirns.blogspot.com/2017/11/dfir-ctf-precision-widgets-of-north.html)
 
 ## Resources
 
@@ -186,10 +208,8 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Twitter
 
 - [@4n6ist](https://twitter.com/4n6ist)
-- [@4n6k](https://twitter.com/4n6k)
 - [@aheadless](https://twitter.com/aheadless)
 - [@AppleExaminer](https://twitter.com/AppleExaminer) - Apple OS X & iOS Digital Forensics
-- [@blackbagtech](https://twitter.com/blackbagtech)
 - [@carrier4n6](https://twitter.com/carrier4n6) - Brian Carrier, author of Autopsy and the Sleuth Kit
 - [@CindyMurph](https://twitter.com/CindyMurph) - Detective & Digital Forensic Examiner
 - [@forensikblog](https://twitter.com/forensikblog) - Computer forensic geek
@@ -202,6 +222,12 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [@sleuthkit](https://twitter.com/sleuthkit)
 - [@williballenthin](https://twitter.com/williballenthin)
 - [@XWaysGuide](https://twitter.com/XWaysGuide)
+
+Vendors:
+
+- [@Belkasoft](https://twitter.com/Belkasoft)
+- [@blackbagtech](https://twitter.com/blackbagtech)
+
 
 ### Blogs
 
