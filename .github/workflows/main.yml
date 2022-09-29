@@ -2,10 +2,10 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '0 0 * * 0'
 
 jobs:
   build:
@@ -17,4 +17,4 @@ jobs:
     - name: Test README.md
       run: |
         gem install awesome_bot
-        awesome_bot --allow-ssl README.md
+        awesome_bot --allow-ssl --request-delay 1 README.md -w "dfir.org"
