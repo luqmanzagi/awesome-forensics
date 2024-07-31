@@ -101,12 +101,13 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
 - [AVML](https://github.com/microsoft/avml) - A portable volatile memory acquisition tool for Linux
 - [Belkasoft RAM Capturer](https://belkasoft.com/ram-capturer) - Volatile Memory Acquisition Tool
-- [CrowdResponse](https://www.crowdstrike.com/resources/community-tools/crowdresponse/) - A static host data collection tool by CrowdStrike
 - [DFIR ORC](https://dfir-orc.github.io/) - Forensics artefact collection tool for systems running Microsoft Windows
 - [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector) - Collect artifacts on windows
-- [FireEye Memoryze](https://fireeye.market/apps/211368) - A free memory forensic software 
+- [FireEye Memoryze](https://fireeye.market/apps/211368) - A free memory forensic software
+- [FIT](https://github.com/fit-project/fit) - Forensic acquisition of web pages, emails, social media, etc.
+- [ForensicMiner](https://github.com/securityjoes/ForensicMiner) - A PowerShell-based DFIR automation tool, for artifact and evidence collection on Windows machines.
 - [LiME](https://github.com/504ensicsLabs/LiME) - Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, formerly called DMD
-- [Magnet RAM Capture](https://www.magnetforensics.com/resources/magnet-ram-capture/) - A free imaging tool designed to capture the physical memory
+- [Magnet RAM Capture / DumpIt](https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/) - A free imaging tool designed to capture the physical memory
 - [SPECTR3](https://github.com/alpine-sec/SPECTR3) - Acquire, triage and investigate remote evidence via portable iSCSI readonly access
 - [unix_collector](https://github.com/op7ic/unix_collector) - A live forensic collection script for UNIX-like systems as a single script.
 - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using Velocidex Query Language (VQL) queries
@@ -114,10 +115,10 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### Imaging
 
-- [dc3dd](https://sourceforge.net/projects/dc3dd/) - Improved version of dd
+- [dc3dd](https://sourceforge.net/projects/dcfldd/) - Improved version of dd
 - [dcfldd](https://dcfldd.sourceforge.net/) - Different improved version of dd (this version has some bugs!, another version is on github [adulau/dcfldd](https://github.com/adulau/dcfldd))
-- [FTK Imager](https://www.exterro.com/ftk-imager) - Free imageing tool for windows
-- :star: [Guymager](https://guymager.sourceforge.io/) - Open source version for disk imageing on linux systems
+- [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) - Free imageing tool for windows
+- :star: [Guymager](https://sourceforge.net/projects/guymager/) - Open source version for disk imageing on linux systems
 
 ### Carving
 
@@ -141,25 +142,28 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Kismet](https://github.com/kismetwireless/kismet) - A passive wireless sniffer
 - [NetworkMiner](https://www.netresec.com/?page=Networkminer) - Network Forensic Analysis Tool
+- [Squey](https://squey.org) - Logs/PCAP visualization software designed to detect anomalies and weak signals in large amounts of data.
 - :star: [WireShark](https://www.wireshark.org/) - A network protocol analyzer
 
 ### Windows Artifacts
 
 - [Beagle](https://github.com/yampelo/beagle) -  Transform data sources and logs into graphs
+- [Blauhaunt](https://github.com/cgosec/Blauhaunt) - A tool collection for filtering and visualizing logon events
 - [FRED](https://www.pinguin.lu/fred) - Cross-platform microsoft registry hive editor
 - [Hayabusa](https://github.com/Yamato-Security/hayabusa) - A a sigma-based threat hunting and fast forensics timeline generator for Windows event logs.
 - [LastActivityView](https://www.nirsoft.net/utils/computer_activity_view.html) - LastActivityView by Nirsoftis a tool for Windows operating system that collects information from various sources on a running system, and displays a log of actions made by the user and events occurred on this computer. 
 - [LogonTracer](https://github.com/JPCERTCC/LogonTracer) - Investigate malicious Windows logon by visualizing and analyzing Windows event log
+- [PyShadow](https://github.com/alicangnll/pyshadow) - A library for Windows to read shadow copies, delete shadow copies, create symbolic links to shadow copies, and create shadow copies
 - [python-evt](https://github.com/williballenthin/python-evt) - Pure Python parser for classic Windows Event Log files (.evt)
 - [RegRipper3.0](https://github.com/keydet89/RegRipper3.0) - RegRipper is an open source Perl tool for parsing the Registry and presenting it for analysis
 - [RegRippy](https://github.com/airbus-cert/regrippy) - A framework for reading and extracting useful forensics data from Windows registry hives
-
 
 #### NTFS/MFT Processing
 
 - [MFT-Parsers](http://az4n6.blogspot.com/2015/09/whos-your-master-mft-parsers-reviewed.html) - Comparison of MFT-Parsers
 - [MFTEcmd](https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html) - MFT Parser by Eric Zimmerman
 - [MFTExtractor](https://github.com/aarsakian/MFTExtractor) - MFT-Parser
+- [MFTMactime](https://github.com/kero99/mftmactime) - MFT and USN parser that allows direct extraction in filesystem timeline format (mactime), dump all resident files in the MFT in their original folder structure and run yara rules over them all.
 - [NTFS journal parser](http://strozfriedberg.github.io/ntfs-linker/)
 - [NTFS USN Journal parser](https://github.com/PoorBillionaire/USN-Journal-Parser)
 - [RecuperaBit](https://github.com/Lazza/RecuperaBit) - Reconstruct and recover NTFS data
@@ -223,12 +227,14 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### Management
 
+- [Catalyst](https://github.com/SecurityBrewery/catalyst) - Catalyst is an open source security automation and ticket system
 - [dfirtrack](https://github.com/dfirtrack/dfirtrack) - Digital Forensics and Incident Response Tracking application, track systems
 - [Incidents](https://github.com/veeral-patel/incidents) - Web application for organizing non-trivial security investigations. Built on the idea that incidents are trees of tickets, where some tickets are leads
+- [iris](https://github.com/dfir-iris/iris-web) - Collaborative Incident Response platform
 
 ### Picture Analysis
 
-- [Ghiro](http://www.getghiro.org/) - A fully automated tool designed to run forensics analysis over a massive amount of images
+- [Ghiro](https://github.com/Ghirensics/ghiro) - A fully automated tool designed to run forensics analysis over a massive amount of images
 - [sherloq](https://github.com/GuidoBartoli/sherloq) - An open-source digital photographic image forensic toolset
 
 ### Metadata Forensics
@@ -257,7 +263,6 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [Forensics CTFs](https://github.com/apsdehal/awesome-ctf/blob/master/README.md#forensics)
 - [MagnetForensics CTF Challenge](https://www.magnetforensics.com/blog/magnet-weekly-ctf-challenge/)
 - [MalwareTech Challenges](https://www.malwaretech.com/challenges)
-- [MalwareTraffic Analysis](https://www.malware-traffic-analysis.net/training-exercises.html)
 - [MemLabs](https://github.com/stuxnet999/MemLabs)
 - [NW3C Chanllenges](https://nw3.ctfd.io)
 - [Precision Widgets of North Dakota Intrusion](https://betweentwodfirns.blogspot.com/2017/11/dfir-ctf-precision-widgets-of-north.html)
@@ -268,17 +273,16 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Web
 
 - [ForensicsFocus](https://www.forensicfocus.com/)
-- [Insecstitute Resources](https://resources.infosecinstitute.com/)
+- [Insecstitute Resources](https://www.infosecinstitute.com/resources/)
 - [SANS Digital Forensics](https://www.sans.org/digital-forensics-incident-response/)
-
 
 ### Blogs
 
 - [FlashbackData](https://www.flashbackdata.com/blog/)
 - [Netresec](https://www.netresec.com/index.ashx?page=Blog)
 - [SANS Forensics Blog](https://www.sans.org/blog/?focus-area=digital-forensics)
-- [SecurityAffairs](https://securityaffairs.co/) - blog by Pierluigi Paganini
-- [thisweekin4n6.wordpress.com](thisweekin4n6.wordpress.com) - Weekly updates for forensics
+- [SecurityAffairs](https://securityaffairs.com/) - blog by Pierluigi Paganini
+- [This Week In 4n6](https://thisweekin4n6.com/) - Weekly updates for forensics
 - [Zena Forensics](https://blog.digital-forensics.it/)
 
 ### Books
