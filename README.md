@@ -61,6 +61,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### Frameworks
 
+- [AIFT](https://github.com/FlipForensics/AIFT) - AIFT (AI Forensic Triage) parses evidence using dissect and generates AI-assisted forensic reports.
 - :star:[Autopsy](http://www.sleuthkit.org/autopsy/) - SleuthKit GUI
 - [dexter](https://github.com/coinbase/dexter) - Dexter is a forensics acquisition framework designed to be extensible and secure
 - [dff](https://github.com/arxsys/dff) - Forensic framework
@@ -80,6 +81,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Live Forensics
 
 - [grr](https://github.com/google/grr) - GRR Rapid Response: remote live forensics for incident response
+- [InnerWarden](https://github.com/InnerWarden/innerwarden) - Security agent with built-in forensic capture (process state, network connections, memory maps, hidden process detection via direct /proc reads)
 - [Linux Expl0rer](https://github.com/intezer/linux-explorer) - Easy-to-use live forensics toolbox for Linux endpoints written in Python & Flask
 - [mig](https://github.com/mozilla/mig) - Distributed & real time digital forensics at the speed of the cloud
 - [osquery](https://github.com/osquery/osquery) - SQL powered operating system analytics
@@ -98,6 +100,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Acquisition
 
 - [Acquire](https://github.com/fox-it/acquire) - Acquire is a tool to quickly gather forensic artifacts from disk images or a live system into a lightweight container
+- [ALEX](https://github.com/prosch88/ALEX) - Extract files from ADB devices on Windows, Linux and MacOS. Mostly a wrapper for adbutils.
 - [artifactcollector](https://github.com/forensicanalysis/artifactcollector) - A customizable agent to collect forensic artifacts on any Windows, macOS or Linux system
 - [ArtifactExtractor](https://github.com/Silv3rHorn/ArtifactExtractor) - Extract common Windows artifacts from source images and VSCs
 - [AVML](https://github.com/microsoft/avml) - A portable volatile memory acquisition tool for Linux
@@ -108,9 +111,11 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [FIT](https://github.com/fit-project/fit) - Forensic acquisition of web pages, emails, social media, etc.
 - [ForensicMiner](https://github.com/securityjoes/ForensicMiner) - A PowerShell-based DFIR automation tool, for artifact and evidence collection on Windows machines.
 - [Fuji](https://github.com/Lazza/Fuji/) - MacOS forensic acquisition made simple. It creates full file system copies or targeted collection of Mac computers.
-- [LiME](https://github.com/504ensicsLabs/LiME) - Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, formerly called DMD
+- [Hashment](https://github.com/hashment/yaffs2-forensic-tool) - Python forensic tool to analyze, dump, and recover deleted files from YAFFS2 partitions.
+- [LiME](https://github.com/jtsylve/LiME) - Loadable Kernel Module (LKM), which allows the acquisition of volatile memory from Linux and Linux-based devices, formerly called DMD
 - [Magnet RAM Capture / DumpIt](https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/) - A free imaging tool designed to capture the physical memory
 - [SPECTR3](https://github.com/alpine-sec/SPECTR3) - Acquire, triage and investigate remote evidence via portable iSCSI readonly access
+- [TriageHasher](https://github.com/FlipForensics/TriageHasher) - A flexible hashing tool designed for triage collections on Windows, Linux and MacOS. Only hash files with a given extension and location. 
 - [UFADE](https://github.com/prosch88/UFADE) - Extract files from iOS devices on Linux and MacOS. Mostly a wrapper for pymobiledevice3. Creates iTunes-style backups and advanced logical backups.
 - [unix_collector](https://github.com/op7ic/unix_collector) - A live forensic collection script for UNIX-like systems as a single script.
 - [Velociraptor](https://github.com/Velocidex/velociraptor) - Velociraptor is a tool for collecting host based state information using Velocidex Query Language (VQL) queries
@@ -122,7 +127,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [dcfldd](https://sourceforge.net/projects/dcfldd/) - Different improved version of dd (this version has some bugs!, another version is on github [adulau/dcfldd](https://github.com/adulau/dcfldd))
 - [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) - Free imageing tool for windows
 - :star: [Guymager](https://sourceforge.net/projects/guymager/) - Open source version for disk imageing on linux systems
-- [4n6pi](https://github.com/plonxyz/4n6pi) - Forensic disk imager, designed to run on a Raspberry Pi, powered by libewf
+- [acquirepi](https://github.com/plonxyz/acquirepi) - Successor to 4n6pi, scalable forensic disk imager, designed to run on a Raspberry Pi, powered by libewf
 
 ### Carving
 
@@ -146,6 +151,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Kismet](https://github.com/kismetwireless/kismet) - A passive wireless sniffer
 - [NetworkMiner](https://www.netresec.com/?page=Networkminer) - Network Forensic Analysis Tool
+- [RustNet](https://github.com/domcyrus/rustnet) - A cross-platform network monitoring terminal UI providing real-time visibility into network connections
 - [Squey](https://squey.org) - Logs/PCAP visualization software designed to detect anomalies and weak signals in large amounts of data.
 - :star: [WireShark](https://www.wireshark.org/) - A network protocol analyzer
 
@@ -181,7 +187,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [MacLocationsScraper](https://github.com/mac4n6/Mac-Locations-Scraper) - Dump the contents of the location database files on iOS and macOS
 - [macMRUParser](https://github.com/mac4n6/macMRU-Parser) - Python script to parse the Most Recently Used (MRU) plist files on macOS into a more human friendly format
 - [OSXAuditor](https://github.com/jipegit/OSXAuditor)
-- [OSX Collect](https://github.com/Yelp/osxcollector)
+- [OSX Collect](https://github.com/YelpArchive/osxcollector)
 
 ### Mobile Forensics
 
@@ -207,6 +213,7 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 - [hindsight](https://github.com/obsidianforensics/hindsight) - Internet history forensics for Google Chrome/Chromium
 - [IE10Analyzer](https://github.com/moaistory/IE10Analyzer) - This tool can parse normal records and recover deleted records in WebCacheV01.dat.
 - [unfurl](https://github.com/obsidianforensics/unfurl) - Extract and visualize data from URLs
+- [Wayback-Archive](https://github.com/GeiserX/Wayback-Archive) - Download complete websites from the Wayback Machine with full asset preservation for offline viewing.
 - [WinSearchDBAnalyzer](https://github.com/moaistory/WinSearchDBAnalyzer) - This tool can parse normal records and recover deleted records in Windows.edb.
 
 ### Timeline Analysis
@@ -244,9 +251,13 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 ### Metadata Forensics
 
-- [ExifTool](https://exiftool.org/) by Phil Harvey
 - [EXIF Editor](https://exifeditor.io/) In-browser, privacy first EXIF Viewer/Editor/Analysis tool (Zero Sign Up). Home to the The EXIF Guide, and The EXIF Quiz.
+- [ExifTool](https://exiftool.org/) by Phil Harvey
 - [FOCA](https://github.com/ElevenPaths/FOCA) - FOCA is a tool used mainly to find metadata and hidden information in the documents
+- [Metagoofil](https://github.com/laramies/metagoofil) - Metadata harvester for extracting metadata from public documents
+- [mat2](https://github.com/jvoisin/mat2) - Metadata removal tool, supporting a wide range of commonly used file formats
+- [oletools](https://github.com/decalage2/oletools) - Tools to analyze Microsoft OLE2 files and MS Office documents for malware analysis and forensics
+- [pdf-parser](https://blog.didierstevens.com/programs/pdf-tools/) - Parse and analyze PDF files to extract metadata and identify malicious content
 
 ### Steganography
 
@@ -258,7 +269,6 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ## Learn Forensics
 
 - [Forensic challenges](https://www.amanhardikar.com/mindmaps/ForensicChallenges.html) - Mindmap of forensic challenges
-- [OpenLearn](https://www.open.edu/openlearn/science-maths-technology/digital-forensics/content-section-0?active-tab=description-tab) - Digital forensic course
 
 ### CTFs and Challenges
 
@@ -278,12 +288,13 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 ### Web
 
 - [ForensicsFocus](https://www.forensicfocus.com/)
-- [SANS Digital Forensics](https://www.sans.org/digital-forensics-incident-response/)
+- [SANS Digital Forensics](https://www.sans.org/cybersecurity-focus-areas/digital-forensics-incident-response)
+- [Forensics StartMe by Stark 4N6](https://startme.stark4n6.com)
 
 ### Blogs
 
 - [Netresec](https://www.netresec.com/index.ashx?page=Blog)
-- [SANS Forensics Blog](https://www.sans.org/blog/?focus-area=digital-forensics)
+- [SANS Forensics Blog](https://www.sans.org/blog?focus-area=digital-forensics)
 - [SecurityAffairs](https://securityaffairs.com/) - blog by Pierluigi Paganini
 - [This Week In 4n6](https://thisweekin4n6.com/) - Weekly updates for forensics
 - [Zena Forensics](https://blog.digital-forensics.it/)
@@ -300,15 +311,13 @@ Curated list of awesome **free** (mostly open source) forensic analysis tools an
 
 - [Digital Forensic Challenge Images](https://www.ashemery.com/dfir.html) - Two DFIR challenges with images
 - [Digital Forensics Tool Testing Images](https://sourceforge.net/projects/dftt/)
-- [The CFReDS Project](https://cfreds.nist.gov)
-  - [Hacking Case (4.5 GB NTFS Image)](https://cfreds.nist.gov/Hacking_Case.html)
 
 ### Other
 
 - [/r/computerforensics/](https://www.reddit.com/r/computerforensics/) - Subreddit for computer forensics
 - [CybersecurityGuide – Digital Forensics Careers](https://cybersecurityguide.org/careers/digital-forensics/) - Guide on skills, certs, and career paths in cyber forensics.
 - [ForensicPosters](https://github.com/Invoke-IR/ForensicPosters) - Posters of file system structures
-- [SANS Posters](https://www.sans.org/posters/) - Free posters provided by SANS
+- [SANS Posters](https://www.sans.org/posters) - Free posters provided by SANS
 
 ### Labs
 
